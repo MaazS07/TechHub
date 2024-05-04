@@ -26,7 +26,7 @@ const Chatbott = () => {
   const [loading, setLoading] = useState(false);
   const [isChatRunning, setChatRunning] = useState(true);
 
-  const genAI = new GoogleGenerativeAI('AIzaSyDJwOdBrFoCowS1KlB0OPkevOxHW4q7-Kw');
+  const genAI = new GoogleGenerativeAI('GEMINI_API_KEY');
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
   const handleChangeSearch = (e) => {
